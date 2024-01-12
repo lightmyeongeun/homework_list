@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{background-image: url(../images/home_bg.png);background-repeat: no-repeat;background-position: right bottom;height: 100vh;margin: 0;}
+.wrap{display: flex;flex-direction: column;justify-content: space-between;height: 100%;}
+.whole{display: flex;justify-content: space-between;}
+.whole .box{width: 200px;height: 200px;background-color: #000;color: #fff;}
+.whole .right{display: flex;justify-content: space-between;}
+.whole .right .margin{margin-right: 8px;}
+
+/* 버튼 */
+.next_button{margin:0 250px 20px 0;text-align: center;position: relative;display: flex;justify-content: flex-end;}
+.next_button a{width: 200px;display: block;text-decoration: none;padding: 14px 0;color: #fff;border: 1px solid #079529;background-color: #02771d;border-radius: 50px;position: relative;margin-right: 10px;}
+.next_button a:last-child{margin-right: 0;}
+.next_button a:hover{opacity: 0.6;}
+.next_button a .next{margin-right: 20px;}
+.next_button a .previous{margin-left: 20px;}
+.next_button a span::after{position: absolute;display: inline-block;content: '';width: 10px;height: 10px;border-top: 2px solid #fff;border-right: 2px solid #fff;}
+.next_button a .list::after{display: none;}
+.next_button a .previous::after{top: 20px;left: 32px;transform: rotate(225deg);}
+.next_button a .next::after{top: 20px;right: 32px;transform: rotate(45deg);}
